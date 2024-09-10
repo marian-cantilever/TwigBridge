@@ -77,7 +77,7 @@ class Str extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter('camel_case', [$this->callback, 'camel']),
