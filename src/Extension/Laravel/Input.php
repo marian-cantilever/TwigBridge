@@ -46,7 +46,7 @@ class Input extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('input_get', [$this->request, 'input']),

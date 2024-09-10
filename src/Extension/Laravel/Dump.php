@@ -38,7 +38,7 @@ class Dump extends AbstractExtension
         $this->cloner = new VarCloner();
     }
 
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('dump', [$this, 'dump'], [

@@ -32,7 +32,7 @@ class Functions extends Loader
     /**
      * {@inheritDoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         $load      = $this->config->get('twigbridge.extensions.functions', []);
         $functions = [];

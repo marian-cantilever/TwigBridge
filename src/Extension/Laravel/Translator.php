@@ -47,7 +47,7 @@ class Translator extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('trans', [$this->translator, 'get']),
@@ -58,7 +58,7 @@ class Translator extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter(

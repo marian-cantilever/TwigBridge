@@ -46,7 +46,7 @@ class Session extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('session', [$this->session, 'get']),

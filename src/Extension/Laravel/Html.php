@@ -47,7 +47,7 @@ class Html extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('link_to', [$this->html, 'link'], ['is_safe' => ['html']]),

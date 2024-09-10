@@ -18,7 +18,7 @@ class Model extends AbstractExtension
     /**
      * @inheritDoc
      */
-    public function getNodeVisitors()
+    public function getNodeVisitors(): array
     {
         return [
             new GetAttrAdjuster,

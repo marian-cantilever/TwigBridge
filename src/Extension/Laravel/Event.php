@@ -17,7 +17,7 @@ use TwigBridge\NodeVisitor\LaravelEventNodeVisitor;
 class Event extends AbstractExtension
 {
 
-    public function getNodeVisitors()
+    public function getNodeVisitors(): array
     {
         return [
             new LaravelEventNodeVisitor(),

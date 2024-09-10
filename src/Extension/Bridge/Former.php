@@ -47,7 +47,7 @@ class Former extends AbstractExtension
     /**
      * {@inheritDoc}
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('former_*', function ($name) {

@@ -102,7 +102,7 @@ class Loader implements LoaderInterface
     /**
      * {@inheritdoc}
      */
-    public function exists($name)
+    public function exists($name): bool
     {
         try {
             $this->findTemplate($name);

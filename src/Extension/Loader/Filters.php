@@ -32,7 +32,7 @@ class Filters extends Loader
     /**
      * {@inheritDoc}
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         $load    = $this->config->get('twigbridge.extensions.filters', []);
         $filters = [];
